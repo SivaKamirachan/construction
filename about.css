@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f9fc;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header & Navbar */
+header {
+  background-color: #222;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 28px;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;
+}
+
+nav ul li a.active {
+  background-color: #007bff;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.7);
+}
+
+/* Main Content */
+main {
+  flex-grow: 1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-section {
+  background: white;
+  max-width: 900px;
+  width: 100%;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section h2 {
+  color: #004080;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: #444;
+}
+
+/* Values Grid */
+.values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.value-item {
+  background: #e7f0ff;
+  padding: 25px 20px;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-8px);
+}
+
+.value-item h3 {
+  color: #0056b3;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.value-item p {
+  color: #33475b;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  text-align: center;
+  padding: 18px 0;
+  color: white;
+  font-size: 14px;
+  flex-shrink: 0;
+}

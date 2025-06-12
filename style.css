@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-image:url('bcr.jpeg');
+  
+  background-size: cover;
+  /* background-color: #dbcece; */
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #c91515;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 100px 20px;
+  font-weight: 600;
+  /* background: url('bcc.jpg') center/cover no-repeat; */
+  color:#0c0c0c;
+ 
+  text-align: center;
+}
